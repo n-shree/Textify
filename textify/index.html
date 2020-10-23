@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textify</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <section class="chat__section">
+        <div class="brand">
+
+        <nav class="display">
+            <h2 class="display">Textify</h2>
+            <p class="display">Because Text Messaging Rocks</p>
+            <a href="#" class="display logout"><b><u>Logout</u></b></a>
+        </nav>
+        </div>
+<!.....................................text area.........................................................>     
+
+<h1 id="phoneArea" class="usernum"></h1>
+<p class="usernum"><u>What is ths number?</u></p>
+
+<div class="color">
+    <form type="submit">
+         <div>
+        <label for="To" class="to">To:</label>
+        <input type="number/text" id="user">
+        <label for="Message" class="text"> <i><< Phone number or name </i></label>
+         </div>
+
+         <div class="display">
+        <label for="Message" class="display">Message:</label>
+            <textarea id="textarea" cols="60" rows="4" placeholder="" class="display"></textarea>
+        
+         </div>
+</form>
+
+        <div class="filebutton"><u>Attach photo to the text message</u><input type="file" id="imagefile"></div>
+
+         <div class="send display">
+          <button class="display" type="submit" id="submit" ><h4>Send Text Message</h4></button>
+          <p class="display text" >or, <u>schedule it for later delivery</u></p>
+         </div>
+        </div>
+
+        </div>
+
+</div>
+
+<!............................................message area...................................................>
+<div class="color1">
+        <div class="display">
+            <button type="submit" class="display"  id="recent" onclick="recent()"><u>Recent Conversation</u></button>
+            <button type="submit" class="display"><u>All Conversations</u></button>
+           
+            <button type="submit" class="display" id="photos"><u>Photos</u></button>
+            <p class="display password"><u>change password</u></p>
+        </div>
+        <div class="display">
+        <h1 id="receiver" class="display"></h1>
+        <p class="display text"><u>Set a name for this number</u></p>
+        <p class=" display password"><u>View All Conversations >></u></p>
+        </div>
+<!--
+        <script>
+            $(document).ready(function () {
+                $("#recent").click(function () {
+                    $("span").show();
+                });
+                $("#photos").click(function () {
+                    $("span").hide();
+                });
+            });
+        </script>s
+    -->
+    
+        <p> <label for=" New Message"><h4>New Text Message:</h4></label></p>
+        <textarea id="textarea1" cols="80" rows="1" placeholder="" class="display"></textarea>
+        <button class="display" type="submit" id="submit1"><u>Send Message</u></button>
+        
+        <a href="#" class="display text"><u>Attach a photo</u></a>
+        <p class="display text">or</p>
+        <a href="#" class="display text"><u>Schedule for later delivery</u></a>
+        </div>
+        <span>
+        <div class="message__area"></div>
+           </span>
+
+           <div class="photo__area">
+            
+           </div>
+<img min-height="200px"> 
+
+    <p class="display">Textify &copy 2011</p>
+    <p class="display">All text messaging data on this site is kept 100% secure-<u>read our security policy.</u></p>
+</section>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+
+
+</body>
+</html>
